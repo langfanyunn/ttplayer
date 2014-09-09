@@ -1,0 +1,640 @@
+/* 主窗口 */
+QWidget#MyWidget{
+background-image: url(./res/skin2/player_skin.png);
+}
+
+/********** 迷你主窗口 ***********************/
+
+QWidget#miniMainWnd
+{
+    border-image:   url(./res/skin2/mini-player.bmp);
+}
+
+/******** 窗口歌词里面的 QLabel ********/
+QLabel#lrcLab{
+    background-color:   qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #c5eaea, stop: 0.4 #d5efff, stop:1 #c5eaea);/*#272a46;*/
+    border:     1px white solid outset;
+    border-radius:  4px;
+}
+
+
+/************** 迷你窗口歌词 *******************/
+QWidget#miniLrcWnd
+{
+    background:   #c5eaea;
+}
+
+/******** 网络音乐窗口 *********/
+QWidget#brower{
+    background-color:   qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                            stop:0 #c5eaea, stop: 0.4 #2caaeb, stop:1 #417c9a);
+}
+
+/******* 搜索输入编辑框 ********/
+QLineEdit#browerLineEdit{
+    background-color:   #2490a4;
+    color:      #00fff0;
+    border: 1px outset light solid ;
+    border-radius:  3px;
+}
+
+/****** 音乐窗口里面的 treeWidget *******/
+QTreeWidget{
+    background-color:  qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                          stop:0 #45a1d0,  stop:1 #417c9a);
+    color:  #00fff0;
+    border: 1px inset #7d17f0 solid;
+    border-radius:  3px;
+    font:   12px "楷体";
+}
+QTreeWidget::item:selected{
+    background-color:   #30566a;
+    color:      #00ffea;
+}
+
+/******** 下载任务里面的进度条 *******/
+QProgress{
+margin:     5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+QProgressBar::chunk {
+    background-color: #05B8CC;
+    width: 10px;
+    margin: 0.4px;
+}
+
+/************* 下载窗口内的工具栏 **************/
+QToolBar{
+    background-color:   #1f94c5;
+    spacing:    5px;
+    border-left: 1px inset #ceced0 solid;
+    border-top: 1px inset #ceced0 solid;
+    border-right: 1px outset #4c4855 solid;
+    border-bottom: 1px outset #4c4855 solid;
+    border-radius:  2px;
+}
+
+/* 网络窗口关闭按钮 */
+QPushButton#browerCloseButton{
+    border-image:   url(./res/skin2/close0.gif);}
+QPushButton#browerCloseButton:hover{
+    border-image:   url(./res/skin2/close1.gif);}
+QPushButton#browerCloseButton:pressed{
+    border-image:   url(./res/skin2/close2.gif);}
+
+
+
+
+/*菜单按钮箭头*/
+QPushButton::menu-indicator
+{
+    image: none;
+}
+
+
+/******** 主窗口按钮 **********/
+
+QPushButton#button0{
+border-image: url(./res/skin2/stop0.gif); }
+QPushButton#button0:hover{
+border-image: url(./res/skin2/stop1.gif); }
+QPushButton#button0:pressed{
+border-image: url(./res/skin2/stop2.gif); }
+QPushButton#button0::disabled{
+border-image: url(./res/skin2/stop3.gif); }
+
+QPushButton#button1{
+border-image: url(./res/skin2/prev0.gif); }
+QPushButton#button1:hover{
+border-image: url(./res/skin2/prev1.gif); }
+QPushButton#button1:pressed{
+border-image: url(./res/skin2/prev2.gif); }
+
+QPushButton#button2:checked{
+border-image: url(./res/skin2/play0.gif); }
+QPushButton#button2:hover:checked{
+border-image: url(./res/skin2/play1.gif); }
+QPushButton#button2:pressed:checked{
+border-image: url(./res/skin2/play2.gif); }
+QPushButton#button2:!checked{
+border-image: url(./res/skin2/paus0.gif); }
+QPushButton#button2:hover:!checked{
+border-image: url(./res/skin2/paus1.gif); }
+QPushButton#button2:pressed:!checked{
+border-image: url(./res/skin2/paus2.gif); }
+
+QPushButton#button3{
+border-image: url(./res/skin2/next0.gif); }
+QPushButton#button3:hover{
+border-image: url(./res/skin2/next1.gif); }
+QPushButton#button3:pressed{
+border-image: url(./res/skin2/next2.gif); }
+
+
+QPushButton#button5{
+border-image: url(./res/skin2/brow0.gif); }
+QPushButton#button5:hover{
+border-image: url(./res/skin2/brow1.gif); }
+QPushButton#button5:pressed{
+border-image: url(./res/skin2/brow2.gif); }
+
+QPushButton#button6{
+border-image: url(./res/skin2/lrc0.gif); }
+QPushButton#button6:hover{
+border-image: url(./res/skin2/lrc2.gif); }
+QPushButton#button6:pressed, QPushButton#button6:checked{   /* 设置两个状态方式*/
+border-image: url(./res/skin2/lrc1.gif); }
+
+QPushButton#button7{
+border-image: url(./res/skin2/eq0.gif); }
+QPushButton#button7:hover{
+border-image: url(./res/skin2/eq1.gif); }
+QPushButton#button7:pressed{
+border-image: url(./res/skin2/eq2.gif); }
+
+QPushButton#button8{
+border-image: url(./res/skin2/list0.gif); }
+QPushButton#button8:hover{
+border-image: url(./res/skin2/list2.gif); }
+QPushButton#button8:pressed, QPushButton#button8:checked{
+border-image: url(./res/skin2/list1.gif); }
+
+QPushButton#button9{
+border-image: url(./res/skin2/mute0.gif); }
+QPushButton#button9:hover{
+border-image: url(./res/skin2/mute1.gif); }
+QPushButton#button9:pressed{
+border-image: url(./res/skin2/mute2.gif); }
+
+QPushButton#button10{
+border-image: url(./res/skin2/mini0.gif); }
+QPushButton#button10:hover{
+border-image: url(./res/skin2/mini1.gif); }
+QPushButton#button10:pressed{
+border-image: url(./res/skin2/mini2.gif); }
+
+QPushButton#button11{
+border-image: url(./res/skin2/min0.gif); }
+QPushButton#button11:hover{
+border-image: url(./res/skin2/min1.gif); }
+QPushButton#button11:pressed{
+border-image: url(./res/skin2/min2.gif); }
+
+QPushButton#button12{
+border-image: url(./res/skin2/close0.gif); }
+QPushButton#button12:hover{
+border-image: url(./res/skin2/close1.gif); }
+QPushButton#button12:pressed{
+border-image: url(./res/skin2/close2.gif); }
+
+QSlider#volume::groove{                         /* 表示的是整个背景 */
+background-image: url(./res/skin2/progress2.png); }
+QSlider#volume::sub-page{                       /*  右边那半用 ::add-page 表示 */
+background-image: url(./res/skin2/progress2.bmp); }
+QSlider#volume::handle{                         /* 滑块 */
+image: url(./res/skin2/thumb0.png); }
+QSlider#volume::handle:hover{
+image: url(./res/skin2/thumb1.png); }
+QSlider#volume::handle:pressed{
+image: url(./res/skin2/thumb2.png); }
+
+/* 进度条 */
+QSlider#progress::groove{
+background-image: url(./res/skin2/progressbk.png); }
+QSlider#progress::sub-page{                       /*  右边那半用 ::add-page 表示 */
+background-image: url(./res/skin2/progressfill.png); }
+QSlider#progress::handle{                         /* 滑块 */
+image: url(./res/skin2/thumb0.png); }
+QSlider#progress::handle:hover{
+image: url(./res/skin2/thumb1.png); }
+QSlider#progress::handle:pressed{
+image: url(./res/skin2/thumb2.png); }
+
+
+/*播放列表菜单bar*/
+QMenuBar#menuBar{
+    spacing: 1px;
+    color: rgb(150,255,250);
+    font:   11px "Tahoma";
+}
+QMenuBar#menuBar::item{
+    background: transparent;
+}
+QMenuBar#menuBar::item:selected{        /* 跳动效果 */
+    padding: 1px, 6px, 1px, 3px;
+    border: 1px inset white;
+    border-radius:  3px;
+}
+QMenu{
+    background-color: rgb(10,135,165);
+    color: rgb(10,255,230);            /* rgb(185,120,235) */
+    font:  12px "Tahoma";
+    margin: 3px;
+}
+QMenu::separator{
+    height: 1px;
+    background: lightblue;
+}
+QMenu::item:disabled{
+    color:  #bbbbbb;
+}
+QMenu::item:selected{
+    background-color: rgb(15,45,110);     /* rgb(15,35,45) */
+}
+
+/**************** toolTip  提示框**************/
+QToolTip{
+    color:  rgb(90, 51, 52);
+    background-color: #c3eaea;
+    opacity:    200;
+    border-radius: 6px;
+    font: 11px "Tahoma";
+    padding: 1px;
+    border-color: darkslategray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/* 播放列表滑块 */
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 9px;
+    margin: 0px, 0px, 0px, 0px;
+    padding-left:   9px;            /*必须预留位置给箭头*/
+    padding-right:    9px;
+}
+
+/* 水平滑块 */
+QScrollBar::handle:horizontal {
+    height: 9px;
+    border-image:  url(./res/skin2/hbar0.gif);
+    min-width:    20;
+}
+QScrollBar::handle:horizontal:hover{
+    height: 9px;
+    border-image:  url(./res/skin2/hbar1.gif);
+    min-width:    20;
+}
+QScrollBar::handle:horizontal:pressed{
+    height: 9px;
+    border-image:  url(./res/skin2/hbar2.gif);
+    min-width:    20;
+}
+/* 左箭头 */
+QScrollBar::sub-line:horizontal{
+    height:    9px;
+    width:     9px;
+    border-image:  url(./res/skin2/leftarrow0.gif);
+    subcontrol-position:   left;
+}
+QScrollBar::sub-line:horizontal:hover{
+    border-image:   url(./res/skin2/leftarrow1.gif);
+}
+QScrollBar::sub-line:horizontal:pressed{
+    border-image:   url(./res/skin2/leftarrow2.gif);
+}
+/*右箭头*/
+QScrollBar::add-line:horizontal{
+    height:    9px;
+    width:     9px;
+    border-image:  url(./res/skin2/rightarrow0.gif);
+    subcontrol-position:   right;
+}
+QScrollBar::add-line:horizontal:hover{
+    border-image:   url(./res/skin2/rightarrow1.gif);
+}
+QScrollBar::add-line:horizontal:pressed{
+    border-image:   url(./res/skin2/rightarrow2.gif);
+}
+/* 滚动槽 */
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
+    border-image:   url(./res/skin2/hscrollbar_slot.bmp);
+}
+/*********** 竖直滑块 *********/
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 0px, 0px, 0px, 0px;
+    padding-top:   7px;            /*必须预留位置给箭头*/
+    padding-bottom:    7px;
+}
+
+/* 滑块 */
+QScrollBar::handle:vertical {
+    width: 9px;
+    border-image:  url(./res/skin2/bar0.gif);
+    min-height:    20px;
+   /* max-height:    25px;  不起作用！？！*/
+}
+/* 滑块悬停 */
+QScrollBar::handle:vertical:hover{
+    width: 8px;
+    border-image:  url(./res/skin2/bar1.gif);
+    min-height:    20;
+}
+QScrollBar::handle:vertical:pressed{
+    width: 8px;
+    border-image:  url(./res/skin2/bar2.gif);
+    min-height:    20;
+}
+
+/* 下箭头 */
+QScrollBar::add-line:vertical{
+    height:    7px;
+    width:     8px;
+    border-image:  url(./res/skin2/downarrow0.gif);
+    subcontrol-position:   bottom;
+}
+QScrollBar::add-line:vertical:hover{
+    border-image:   url(./res/skin2/downarrow1.gif);
+}
+QScrollBar::add-line:vertical:pressed{
+    border-image:   url(./res/skin2/downarrow2.gif);
+}
+
+/* 上箭头 */
+QScrollBar::sub-line:vertical {
+    height:    7px;
+    width:     8px;
+    border-image:  url(./res/skin2/uparrow0.gif);
+    subcontrol-position:   top;
+}
+QScrollBar::sub-line:vertical:hover{
+    border-image:   url(./res/skin2/uparrow1.gif);
+}
+QScrollBar::sub-line:vertical:pressed{
+    border-image:   url(./res/skin2/uparrow2.gif);
+}
+
+/* 滚动槽 */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+    border-image:   url(./res/skin2/scrollbar_slot.bmp);
+}
+
+/* 在QSplitter 上面的部件 *正常状态 ****************************/
+QListWidget{
+    background-color:   qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                        stop:0 #d5eaea, stop: 0.4 #d5efff, stop:1 #d5eaea);/*#272a46;*/
+
+    font:   13px "Tahoma";
+    color:  #1a80aa;
+    border: 0px 0px 0px 0px;    /*边框不明显，可以不去掉*/
+}
+
+/* 分割条，怎么消掉残余的线条，本来就没有，只是QStackWidget当前page有个主部件 */
+/* 然后主部件里面进行的布局，布局貌似是不能铺满窗口的！？！？*/
+/* 解决办法就是一个page只使用一个部件，自动就不会有间隙的了*/
+QSplitter#spliter::handle:horizontal{
+    background-color:   qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                             stop:0 white, stop:1 #00ab9d)
+}
+
+/*列表里面的项目   悬停*/
+QListWidget::item:hover{
+    color:  white;              /*字体*/
+    background-color: #064f87;
+    border-radius:  3px;
+    border: 1px solid white;
+}
+
+QSplitter{      /* 直接子部件*/
+    background-color: #c5eaea;
+}
+
+/*被选择*/
+QListWidget::item:selected{
+    color:  #a50061;              /*字体*/
+    background-color: #dff5f8;
+}
+
+/*被选择 + 悬停*/
+QListWidget::item:selected:hover{
+    color:  #66ff37;              /*字体*/
+    background-color: #064f87;
+}
+
+
+/************** QTableWidget 歌曲列表 *************************/
+
+/*表格里面*/
+QTableWidget{
+    font:   13px "Tahoma";
+    color:  #1a80aa;
+    background-color:   qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                            stop:0 #d5eaea, stop: 0.4 #d5efff, stop:1 #d5eaea);/*#272a46;*/
+    border:     0px 0px 0px 0px;        /*去掉在分裂器周围的界限*/
+}
+
+/*表格的表头的每个头 */
+QHeaderView::section:vertical{       /*表头里的每个标签*/
+    font:   13px "Tahoma";
+    color:  #1a80aa;
+    /*background-color:    #373a56;*/
+    background: transparent;
+    border: 0px 0px 0px 0px;        /*本来是可以伸缩的，去掉之后就不会伸缩了*/
+    margin: 0px 0px 0px 0px;
+    padding:    2px 4px 2px 0px;    /*5px 为了拉开序列号与歌曲名之间距离，会影响表头设置的对齐方式*/
+}
+QHeaderView:vertical{
+    background-color:   qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                        stop:0 #d5eaea, stop: 0.4 #d5efff, stop:1 #d5eaea);/*#272a46;*/
+
+}
+/*********** 网络音乐窗口的 treeWidget 水平表头 ************/
+QHeaderView::section:horizontal{       /*表头里的每个标签*/
+    font:   13px "Tahoma";
+    color:  #1a80aa;
+    background-color:   #2caaeb;
+    border: 1px solid #24cdd8;
+}
+
+/*悬停 排除下载管理里面的*/
+QStackedWidget#playListStackWidget QTableWidget::item:hover{
+    color:  white;              /*字体*/
+    background-color: #064f87;
+    border-radius:  3px;
+    border: 1px outset white;
+}
+
+/*被选择*/
+QTableWidget::item:selected{
+    color:  #a50061;              /*字体*/
+    background-color: #dff5f8;
+}
+
+/*被选择 + 悬停，排除下载管理的tablewidget*/
+QStackedWidget#playListStackWidget QTableWidget::item:selected:hover{
+    color:  #66ff37;              /*字体*/
+    background-color: #064f87;
+}
+
+
+/*************** 窗口歌词三个按钮 ***************************/
+
+QPushButton#lrcButton0:!checked{
+    border-image:   url(./res/skin2/top0.gif);} /*置顶*/
+QPushButton#lrcButton0:hover:!checked{
+    border-image:   url(./res/skin2/top1.gif);}
+QPushButton#lrcButton0:pressed:!checked{
+    border-image:   url(./res/skin2/top2.gif);}
+QPushButton#lrcButton0:checked{
+    border-image:   url(./res/skin2/top2.gif);}
+QPushButton#lrcButton0:pressed:checked{
+    border-image:   url(./res/skin2/top0.gif);}
+
+QPushButton#lrcButton1{
+    border-image:   url(./res/skin2/des0.gif);}
+QPushButton#lrcButton1:hover{
+    border-image:   url(./res/skin2/des1.gif);}
+QPushButton#lrcButton1:pressed{
+    border-image:   url(./res/skin2/des2.gif);}
+
+QPushButton#lrcButton2{
+    border-image:   url(./res/skin2/close0.gif);}
+QPushButton#lrcButton2:hover{
+    border-image:   url(./res/skin2/close1.gif);}
+QPushButton#lrcButton2:pressed{
+    border-image:   url(./res/skin2/close2.gif);}
+
+
+/***** 播放列表关闭按钮 ********/
+
+QPushButton#closeButton{
+    border-image:   url(./res/skin2/close0.gif);}
+QPushButton#closeButton:hover{
+    border-image:   url(./res/skin2/close1.gif);}
+QPushButton#closeButton:pressed{
+    border-image:   url(./res/skin2/close2.gif);}
+
+
+
+/********** 迷你窗口按钮 *************/
+
+/* 停止 */
+QPushButton#miniButton0{
+    border-image: url(./res/skin2/mstop0.gif);
+}
+QPushButton#miniButton0:hover{
+    border-image: url(./res/skin2/mstop1.gif);
+}
+QPushButton#miniButton0:pressed{
+    border-image: url(./res/skin2/mstop2.gif);
+}
+QPushButton#miniButton0:disabled{
+    border-image: url(./res/skin2/mstop3.gif);
+}
+
+/* 上一首 */
+QPushButton#miniButton1
+{
+    border-image: url(./res/skin2/mprev0.gif);
+}
+QPushButton#miniButton1:hover
+{
+    border-image: url(./res/skin2/mprev1.gif);
+}
+QPushButton#miniButton1:pressed
+{
+    border-image: url(./res/skin2/mprev2.gif);
+}
+
+/* 播放暂停按钮 */
+QPushButton#miniButton2:checked{
+    border-image: url(./res/skin2/mplay0.gif);
+}
+QPushButton#miniButton2:hover:checked{
+    border-image: url(./res/skin2/mplay1.gif);
+}
+QPushButton#miniButton2:pressed:checked{
+    border-image: url(./res/skin2/mplay2.gif);
+}
+QPushButton#miniButton2:!checked{
+    border-image: url(./res/skin2/mpaus0.gif);
+}
+QPushButton#miniButton2:hover:!checked{
+    border-image: url(./res/skin2/mpaus1.gif);
+}
+QPushButton#miniButton2:pressed:!checked{
+    border-image: url(./res/skin2/mpaus2.gif);
+}
+
+
+QPushButton#miniButton3
+{
+    border-image: url(./res/skin2/mnext0.gif);
+}
+QPushButton#miniButton3:hover
+{
+    border-image: url(./res/skin2/mnext1.gif);
+}
+QPushButton#miniButton3:pressed
+{
+    border-image: url(./res/skin2/mnext2.gif);
+}
+
+
+
+QPushButton#miniButton5
+{
+    border-image: url(./res/skin2/mini0.gif);
+}
+QPushButton#miniButton5:hover
+{
+    border-image: url(./res/skin2/mini1.gif);
+}
+QPushButton#miniButton5:pressed
+{
+    border-image: url(./res/skin2/mini2.gif);
+}
+
+QPushButton#miniButton6
+{
+    border-image: url(./res/skin2/min0.gif);
+}
+QPushButton#miniButton6:hover
+{
+    border-image: url(./res/skin2/min1.gif);
+}
+QPushButton#miniButton6:pressed
+{
+    border-image: url(./res/skin2/min2.gif);
+}
+
+QPushButton#miniButton7
+{
+    border-image: url(./res/skin2/close0.gif);
+}
+QPushButton#miniButton7:hover
+{
+    border-image: url(./res/skin2/close1.gif);
+}
+QPushButton#miniButton7:pressed
+{
+    border-image: url(./res/skin2/close2.gif);
+}
+
+/*歌词*/
+QPushButton#miniButton8:!checked{
+    border-image: url(./res/skin2/mlrc0.gif);
+}
+QPushButton#miniButton8:pressed:!checked{
+    border-image: url(./res/skin2/mlrc1.gif);
+}
+QPushButton#miniButton8:checked{
+    border-image: url(./res/skin2/mlrc1.gif);
+}
+QPushButton#miniButton8:pressed:checked{
+    border-image: url(./res/skin2/mlrc0.gif);
+}
+
+
+
+
+
+
+
+
